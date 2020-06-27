@@ -1,4 +1,4 @@
-<include a CircleCI status badge, here>
+[![pessniam](https://circleci.com/gh/pessniam/MLMicroAPI.svg?style=svg)](https://circleci.com/gh/pessniam/MLMicroAPI)
 
 
 ## Project Overview
