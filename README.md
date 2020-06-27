@@ -27,6 +27,10 @@ You can find a detailed [project rubric, here](https://review.udacity.com/#!/rub
 ## Setup the Environment
 
 * Create a virtualenv and activate it
+
+    `python -m venv venv_name`
+    
+    `source venv_name/bin/activate`
 * Run `make install` to install the necessary dependencies
 
 ### Running `app.py`
@@ -41,3 +45,15 @@ You can find a detailed [project rubric, here](https://review.udacity.com/#!/rub
 * Setup and Configure Kubernetes locally
 * Create Flask app in Container
 * Run via kubectl
+
+
+# Files
+
+- app.py: Python/Flask app that calculates predictions about boston housing prices via API
+- Dockerfile: it is the docker file for building images
+- config.yml: the CircleCI configuration file for running the builds
+- Makefile: organized environmental setup and execution tasks
+- make_prediction.sh: Send requests to the python flask app to get a prediction back in json
+- run_docker.sh: containes the commands to build the docker image and get running
+- run_kubernetes.sh: contains the commands to deploy the docker image to kubernetes locally
+- upload_docker.sh: contains the commands to push the docker image to Dockerhub
