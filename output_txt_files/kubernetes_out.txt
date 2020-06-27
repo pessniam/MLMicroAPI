@@ -1,1 +1,21 @@
-<paste log output from Kubernetes-mediated prediction, here>
+UdacityDevOps\DevOpsP4>docker ps
+CONTAINER ID        IMAGE                 COMMAND             CREATED              STATUS              PORTS               NAMES
+8ba941542e7b        pessniam/mlmicroapi   "python app.py"     About a minute ago   Up About a minute                       k8s_mlmicroapi_mlmicroapi_default_92e8df83-91d2-4fc7-80bd-16b67
+ad2275f_0
+
+UdacityDevOps\DevOpsP4>kubectl port-forward mlmicroapi 8000:80
+Forwarding from 127.0.0.1:8000 -> 80
+Forwarding from [::1]:8000 -> 80
+Handling connection for 8000
+Handling connection for 8000
+Handling connection for 8000
+Handling connection for 8000
+Handling connection for 8000
+
+Port: 8000
+{
+  "prediction": [
+    20.35373177134412
+  ]
+}
+
